@@ -11,7 +11,7 @@
       "patterns": [
         {
           "comment": "tilde",
-          "match": "(?<=^|\\s)(?:(~.+))(?=\\s)",
+          "match": "(?<=^|\\s)(?:(~.+?))(?=\\s)",
           "name": "support.module.fift"
         },
         {
@@ -62,7 +62,11 @@
           "name": "constant.language.fift"
         },
         {
-          "match": "(?<=^|\\s)([-+]?(0x|0b)?[-+]?[0-f]+(\\.[0-9]*e(-?[0-9]+)|\\.?[0-9a-fA-F]*))(?=\\s)",
+          "match": "(?<=^|\\s)([-+]?[0-9]+)(?=\\s)",
+          "name": "constant.numeric.fift"
+        },
+        {
+          "match": "(?<=^|\\s)([-+]?(0x|0b)[-+]?[0-f]+(\\.[0-9]*e(-?[0-9]+)|\\.?[0-9a-fA-F]*))(?=\\s)",
           "name": "constant.numeric.fift"
         },
         {
@@ -87,7 +91,7 @@
     "storage": {
       "patterns": [
         {
-          "match": "(?:(?<=^|\\s)([cts]\\d+)(?=\\s))",
+          "match": "(?:(?<=^|\\s)([cfts]\\d+)(?=\\s))",
           "name": "support.type.fift"
         },
         {
