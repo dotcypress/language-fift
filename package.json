@@ -1,0 +1,39 @@
+{
+    "name": "language-fift",
+    "publisher": "dotcypress",
+    "displayName": "Fift",
+    "description": "Fift language support in VSCode",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.32.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "fift",
+                "aliases": [
+                    "Fift",
+                    "fift"
+                ],
+                "extensions": [
+                    ".fif"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "fift",
+                "scopeName": "source.fift",
+                "path": "./syntaxes/fift.tmLanguage.json"
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dotcypress/language-fift"
+    }
+}
